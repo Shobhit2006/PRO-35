@@ -33,6 +33,7 @@ function draw() {
   
   if(keyDown(LEFT_ARROW)){
     balloon.addAnimation("hotAirBalloon",balloonImage2);
+    
     //write code to move air balloon in left direction
   }
   else if(keyDown(RIGHT_ARROW)){
@@ -46,19 +47,20 @@ function draw() {
     //write code to move air balloon in up direction
   }
   else if(keyDown(DOWN_ARROW)){
-    //updateHeight(0,10);
+    updateHeight(0,10);
     balloon.addAnimation("hotAirBalloon",balloonImage2);
     
     //write code to move air balloon in down direction
+  
   }
-
+  drawSprites();
   
 
   fill(0);
   stroke("white");
   textSize(25);
   text("**Use arrow keys to move Hot Air Balloon!",40,40);
-  drawSprites();
+  
 }
 
 function updateHeight(x,y){
@@ -70,6 +72,8 @@ function updateHeight(x,y){
 
 function readHeight(data){
   height = data.val();
+  console.log("x ="+ position.x);
+    console.log("y = "+ position.y);
   balloon.x = height.x;
   balloon.y = height.y;
 }
