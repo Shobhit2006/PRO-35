@@ -32,11 +32,13 @@ function draw() {
   background(bg);
   
   if(keyDown(LEFT_ARROW)){
+     updateHeight(-10,0);
     balloon.addAnimation("hotAirBalloon",balloonImage2);
     
     //write code to move air balloon in left direction
   }
   else if(keyDown(RIGHT_ARROW)){
+     updateHeight(10,0);
     balloon.addAnimation("hotAirBalloon",balloonImage2);
     //write code to move air balloon in right direction
   }
