@@ -56,6 +56,9 @@ function draw() {
 
   
   }
+     if(height.x>displayWidth-5){
+        console.log(height.x);
+     }
   drawSprites();
   }
 
