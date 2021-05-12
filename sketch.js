@@ -56,13 +56,11 @@ function draw() {
 
   
   }
-     if(height.x>displayWidth-5){
-        console.log(height.x);
-     }
+     
   drawSprites();
   }
 
-   console.log(displayWidth);
+   
   fill(0);
   stroke("white");
   textSize(25);
