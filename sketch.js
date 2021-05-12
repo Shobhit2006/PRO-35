@@ -62,6 +62,7 @@ function draw() {
   drawSprites();
   }
 
+   console.log(displayWidth);
   fill(0);
   stroke("white");
   textSize(25);
